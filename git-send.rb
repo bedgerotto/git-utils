@@ -2,7 +2,7 @@
 #Place this file on a directory that is in your $PATH and remove the extension, like this: /usr/local/bin/git-send
 
 # Get the modified and new files
-modifiedFiles = `git ls-files -m -o`.split("\n")
+modifiedFiles = `git ls-files -m -o --exclude-standard`.split("\n")
 
 puts "Enter the number of each file you want to commit separated by comma. Or enter blank to all files"
 # List files with numbers to user
